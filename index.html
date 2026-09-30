@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define que o site usa caracteres especiais do português -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar a celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Texto que aparece na aba do navegador -->
+    <title>Mural de Ações do Bairro</title>
+
+    <!-- Conecta o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal do site -->
+    <header>
+        <h1>Mural de Ações do Bairro</h1>
+
+        <p>
+            Registro das ações realizadas pelos moradores da Vila Nova.
+        </p>
+    </header>
+
+    <!-- Área principal onde colocaremos o conteúdo do site -->
+    <main>
+
+        <!-- Título da área que futuramente terá o formulário -->
+    <!-- Área do formulário para cadastrar uma nova ação -->
+<section>
+    <h2>Cadastrar uma ação</h2>
+
+    <!-- Formulário que receberá os dados da ação -->
+    <form id="formulario-acao">
+
+        <!-- Campo para o título da ação -->
+        <div>
+            <label for="titulo">Título da ação:</label>
+            <input
+                type="text"
+                id="titulo"
+                name="titulo"
+                placeholder="Exemplo: Mutirão de limpeza"
+                required
+            >
+        </div>
+
+        <!-- Campo para escolher a categoria -->
+        <div>
+            <label for="categoria">Categoria:</label>
+
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="Ambiental">Ambiental</option>
+                <option value="Social">Social</option>
+                <option value="Educação">Educação</option>
+                <option value="Saúde">Saúde</option>
+            </select>
+        </div>
+
+        <!-- Campo para escolher o local -->
+        <div>
+            <label for="local">Local:</label>
+
+            <select id="local" name="local" required>
+                <option value="">Selecione um local</option>
+
+                <!--
+                    Os locais ainda serão definidos.
+                    Não vamos inventar informações sobre o bairro.
+                -->
+                <option value="[PESQUISAR LOCAL]">[PESQUISAR LOCAL]</option>
+            </select>
+        </div>
+
+        <!-- Campo para informar quantas pessoas participaram -->
+        <div>
+            <label for="participantes">
+                Quantas pessoas participaram?
+            </label>
+
+            <input
+                type="number"
+                id="participantes"
+                name="participantes"
+                min="1"
+                placeholder="Digite a quantidade"
+                required
+            >
+        </div>
+
+        <!-- Campo para explicar o que foi feito -->
+        <div>
+            <label for="descricao">O que foi feito?</label>
+
+            <textarea
+                id="descricao"
+                name="descricao"
+                rows="6"
+                placeholder="Descreva o que foi realizado na ação."
+                required
+            ></textarea>
+        </div>
+
+        <!-- Botão que futuramente salvará a ação -->
+        <button type="submit">Cadastrar ação</button>
+
+    </form>
+</section>
+
+
+        <!-- Área onde futuramente aparecerão as ações cadastradas -->
+    <!-- Área onde as ações cadastradas serão exibidas -->
+<section>
+    <h2>Ações realizadas</h2>
+
+    <!--
+        O JavaScript vai colocar os cartões das ações
+        dentro deste elemento.
+    -->
+    <div id="mural-acoes"></div>
+</section>
+
+
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>Mural de Ações do Bairro - Vila Nova</p>
+    </footer>
+
+    <!-- Conecta o arquivo JavaScript ao HTML -->
+    <script src="script.js"></script>
+
+</body>
+</html>

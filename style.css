@@ -1,0 +1,71 @@
+ /* 
+   Este código define a aparência do nosso site.
+   Aqui não colocamos conteúdo, apenas estilos.
+ */
+
+/* Remove margens e espaços padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a aparência geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f3;
+    color: #26332b;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho do site */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Estiliza o título principal */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o texto abaixo do título */
+header p {
+    font-size: 18px;
+}
+
+/* Organiza o conteúdo principal */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Estiliza cada seção */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+    /* Cria uma sombra suave ao redor da seção */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Estiliza os títulos das seções */
+section h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #26332b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
